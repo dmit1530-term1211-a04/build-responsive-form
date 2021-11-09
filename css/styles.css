@@ -1,2 +1,88 @@
 /* CSS Variables - https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
 
+html {
+    color: #222;
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+
+body {
+    font-size: 1.8rem; /*18px*/
+}
+
+.inner-container {
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+
+/** styling the form **/
+
+/** remove the fieldset defaults **/
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+}
+
+input,
+select,
+textarea {
+    width: 60rem;
+}
+
+form div,
+fieldset {
+    margin-bottom: 3rem;
+}
+
+/* targets the divs within the fieldset only */
+fieldset div {
+    margin-bottom: 1rem;
+}
+
+textarea {
+    resize: vertical; /** values: horizontal, vertical or both */
+    min-width: 60rem;
+    max-width: 60rem;
+    min-height: 8rem;
+}
+
+/** target only the radio and checkbox fields **/
+input[type=radio],
+input[type=checkbox] {
+    /** set the width back to its initial default state **/
+    width: initial; /** or auto **/
+}
+
+/** to place the labels be side radio or checkboxes you can use flex or display inline.  **/
+
+label[for="hamsters"],
+label[for="dogs"],
+label[for="crocodile"],
+label[for="spiders"],
+label[for="scorpion"],
+label[for="praying-mantis"] {
+    display: inline-block;
+    margin-left: 0.5rem;
+}
+
+/** target the submit button **/
+input[type=submit] {
+    
+}
+
